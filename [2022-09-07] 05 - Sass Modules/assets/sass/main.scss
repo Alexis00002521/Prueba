@@ -1,0 +1,13 @@
+@import "variables";
+@import "./components/img.scss";
+
+/* Mixins */
+@import "mixins";
+
+/* Reset */
+@import "base/reset";
+@import "base/page";
+
+
+/* Secciones */
+@import "./layouts/sections";
