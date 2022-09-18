@@ -1,138 +1,95 @@
+@import url(./base/_reset.scss);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
-#pic {
-  height: 40rem;
-  width: 40rem; }
-
-#img {
-  display: flex; }
-
-/* Mixins */
-/* Reset */
-:root {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300; }
-
-/*RESET CSS*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body {
-  width: 100%;
-  background: white;
-  font-family: "Roboto", sans-serif; }
-
-/* Secciones */
-h2 {
-  font-size: 100px;
-  font-family: "Roboto",sans-serif; }
-
-#padre {
-  flex: 1 0  300px; }
-
-.icon {
-  height: 2rem;
-  width: 2rem; }
+  box-sizing: border-box;
+  font-family: sans-serif; }
 
 #head {
+  height: 100%;
+  width: 100%;
   display: flex;
-  gap: 1rem;
-  color: black; }
+  background-color: #fff;
+  padding: 0rem; }
+  #head > #logo {
+    width: 5%;
+    height: 100%;
+    justify-content: center;
+    align-self: center;
+    text-align: end;
+    font-size: x-large; }
+  #head > #temes {
+    width: 80%;
+    align-self: center;
+    flex-flow: row;
+    font-weight: bold; }
+  #head > #botonera {
+    justify-self: center;
+    align-self: center; }
+    #head > #botonera .btnl {
+      width: 7rem;
+      border-radius: 1.5rem 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      color: gray;
+      border-color: gray;
+      border: solid 2px; }
+  #head .lista {
+    display: flex;
+    gap: 0.5rem; }
+    #head .lista li {
+      list-style: none; }
+    #head .lista a {
+      display: inline-block;
+      padding: 1.5rem;
+      color: gray;
+      text-decoration: none; }
 
-#temas {
-  color: gray; }
-
-.btn {
-  display: flex;
-  gap: 1rem;
-  align-items: center; }
-
-.btnl {
-  border-radius: 0.5rem 0.5rem;
-  border: 1;
-  height: 2rem;
-  width: 6rem;
-  font-size: 1rem;
-  color: gray;
-  border-color: gray;
-  background-color: white; }
-
-#login {
-  background-color: white;
-  color: gray;
-  border: 0; }
-
-h3 {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Gill Sans'; }
-
-h4 {
-  text-align: center; }
-
-#temas {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-  align-items: center; }
-
-#padre {
+#bod {
   display: flex; }
+  #bod #footer {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; }
+    #bod #footer img {
+      height: 2rem;
+      width: 2rem; }
 
-#footer {
+#pic {
+  height: 40rem; }
+
+#imagen {
+  padding: 1rem; }
+
+#texto {
+  padding: 1rem;
   display: flex;
-  align-items: center; }
-
-#more {
-  background-color: #333333;
-  border-radius: 0.3rem 0.3rem;
-  border: 0;
-  color: white;
-  height: 3rem;
-  width: 8rem;
-  font-size: 1rem; }
+  flex-direction: column;
+  align-items: center;
+  height: 80%; }
+  #texto > h2 {
+    align-items: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: start;
+    padding: 0%; }
+  #texto > p {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    height: 40%;
+    text-align: justify;
+    padding: 1rem; }
+  #texto #more {
+    padding: 1rem;
+    border-radius: 1.5rem 1.5rem;
+    border: solid black;
+    color: #fff;
+    background-color: black;
+    width: 8rem; }
 
 /*# sourceMappingURL=style.css.map */

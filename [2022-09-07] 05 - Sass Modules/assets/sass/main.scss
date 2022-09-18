@@ -1,13 +1,126 @@
-@import "variables";
-@import "./components/img.scss";
+@import url(./base/_reset.scss);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
-/* Mixins */
-@import "mixins";
+#head{
+    height: 100%;
+    width: 100%;
 
-/* Reset */
-@import "base/reset";
-@import "base/page";
+    display: flex;
+    background-color:#fff;
 
+    padding: 0rem;
 
-/* Secciones */
-@import "./layouts/sections";
+    >#logo{
+        width: 5%;
+        height: 100%;
+
+        justify-content: center;
+        align-self: center;
+        text-align:end;
+        font-size:x-large;
+        
+        
+        
+    }
+    >#temes{
+        width: 80%;
+        align-self: center;
+        flex-flow: row;
+        font-weight: bold;
+    }
+    > #botonera{
+        justify-self: center;
+        align-self: center;
+        .btnl{
+            width: 7rem;
+            border-radius: 1.5rem 1.5rem;
+            padding: 1rem;
+            background-color:#fff;
+            color: gray;
+            border-color:gray;
+            border: solid 2px;
+        }
+    }
+
+    .lista{
+        display: flex;
+        gap: 0.5rem;
+        li
+        {
+            list-style: none;
+        }
+
+        a {
+            display: inline-block;
+            padding: 1.5rem;
+            color: gray;
+            text-decoration: none;
+        }
+    }
+}
+
+#bod{
+    display: flex;
+    #footer{
+        display: flex;
+        flex-flow: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 2rem;
+            width:  2rem;
+        }
+    }
+}
+#pic {
+    height: 40rem;
+}
+
+#imagen{
+    padding: 1rem;
+}
+
+#texto{
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 80%;
+    >h2{
+        align-items: center;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: start;
+        padding: 0%;
+    
+    }
+    >p{
+        align-self: center;
+        display: flex;
+        align-items: center;
+        height: 40%;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    #more
+    {
+        padding: 1rem;
+        border-radius: 1.5rem 1.5rem;
+        border: solid black;
+        color: #fff;
+        background-color:black;
+        width: 8rem;
+    }
+
+}
